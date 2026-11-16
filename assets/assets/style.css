@@ -81,3 +81,11 @@
 /* Shared, view-only status filtering across the three home views. */
 .status-filter-group{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 8px}.status-filter-group button{font-size:12px;min-height:44px;gap:8px}.status-filter-group button[aria-pressed=true]{background:var(--green);border-color:var(--green);color:white}.filter-count{font-variant-numeric:tabular-nums;min-width:16px;text-align:center;font-size:11px}.status-filter-hint,.filter-summary{font-size:12px!important;color:var(--muted);line-height:1.8;overflow-wrap:anywhere}.filter-empty{border:1px dashed var(--line);padding:20px;margin:14px 0;background:var(--surface)}.filter-empty p{font-size:13px;line-height:1.8}.workflow-row[hidden],.course-item[hidden],.project-map-item[hidden],.filter-empty[hidden]{display:none!important}
 @media(max-width:650px){.status-filter-group{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.status-filter-group button{padding:9px 7px;justify-content:center;min-width:0}.status-filter-hint{font-size:11px!important}}
+
+/* 手機PDF與靜態成果交付 */
+#mobile-export-dialog{position:fixed;width:min(680px,calc(100vw - 24px));max-height:85dvh;overflow:auto;box-sizing:border-box;padding:20px;overscroll-behavior:contain}
+.mobile-export-actions{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+.mobile-export-actions a{display:inline-flex;align-items:center;min-height:44px;padding:10px 14px;border:1px solid #a7b8ae;border-radius:8px;color:#173c35;background:#fff;text-decoration:none;box-sizing:border-box}
+.mobile-export-actions [hidden]{display:none!important}
+@media(max-width:600px){.mobile-export-actions>*{flex:1 1 44%;justify-content:center;white-space:normal}#mobile-export-dialog{padding:16px}}
+@media print{#download-pdf-button,#preview-result-button,#mobile-export-dialog{display:none!important}}
