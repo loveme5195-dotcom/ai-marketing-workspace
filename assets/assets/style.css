@@ -89,3 +89,5 @@
 .mobile-export-actions [hidden]{display:none!important}
 @media(max-width:600px){.mobile-export-actions>*{flex:1 1 44%;justify-content:center;white-space:normal}#mobile-export-dialog{padding:16px}}
 @media print{#download-pdf-button,#preview-result-button,#mobile-export-dialog{display:none!important}}
+
+.project-checks>summary{cursor:pointer;min-height:44px;padding:10px 0;overflow-wrap:anywhere}.project-checks>summary h2{display:inline;margin:0}.project-checks-cue{display:block;margin:8px 0 0 20px;font-size:13px;color:var(--green)}.project-checks>summary:focus-visible{outline:3px solid var(--orange);outline-offset:4px}
