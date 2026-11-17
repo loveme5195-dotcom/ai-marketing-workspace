@@ -91,3 +91,5 @@
 @media print{#download-pdf-button,#preview-result-button,#mobile-export-dialog{display:none!important}}
 
 .project-checks>summary{cursor:pointer;min-height:44px;padding:10px 0;overflow-wrap:anywhere}.project-checks>summary h2{display:inline;margin:0}.project-checks-cue{display:block;margin:8px 0 0 20px;font-size:13px;color:var(--green)}.project-checks>summary:focus-visible{outline:3px solid var(--orange);outline-offset:4px}
+
+.ollama-network-help{font-size:13px;line-height:1.8;overflow-wrap:anywhere}.ollama-network-help summary{cursor:pointer;min-height:44px;padding:10px 0}.ollama-network-help ol{padding-left:22px}.ollama-network-help li{margin:8px 0}#ai-settings-status,#ai-model-test-status,#ai-status{white-space:pre-line;overflow-wrap:anywhere}
